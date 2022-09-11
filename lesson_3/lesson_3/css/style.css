@@ -1,0 +1,47 @@
+.hidden {
+    display: none;
+}
+
+h1 {
+    color: blueviolet;
+}
+.tags {
+    color: rgb(114, 114, 218);
+}
+#common {
+    color: green;
+}
+
+h2.orange {
+    color: orange;
+}
+.header-colored.pink {
+    color: pink;
+}
+.recommend-text,
+.special-symbols {
+    color: rgb(140, 25, 25);
+}
+.versions-text p{
+ color: lime;
+}
+
+.browser-wars_text .colored {
+    color: brown;
+}
+
+#versions ul > li {
+    color: yellow;
+}
+
+h1 ~ p {
+ color: red;
+}
+
+.next + p {
+    color: blue;
+}
+
+.content-links * {
+    color: black;
+} 
