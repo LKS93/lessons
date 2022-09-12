@@ -1,0 +1,183 @@
+/* Zeroing */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    color: inherit;
+}
+a:link,
+a:visited,
+a:hover{
+    text-decoration: none;
+}
+img{
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea{
+    font-weight: inherit;
+    font-size: inherit;
+}
+button{
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+}
+body{
+    line-height: 1;
+}
+/* Zeroing end*/
+
+@font-face {
+    font-family: 'Larsseit';
+    src:
+        url('../fonts/Larsseit-Regular.woff2') format('woff2'),
+        url('../fonts/Larsseit-Regular.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Larsseit';
+    src:
+        url('../fonts/Larsseit-Medium.woff2') format('woff2'),
+        url('../fonts/Larsseit-Medium.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Larsseit';
+    src:
+        url('../fonts/Larsseit-Bold.woff2') format('woff2'),
+        url('../fonts/Larsseit-Bold.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('../fonts/latoregular.woff2') format('woff2'),
+        url('../fonts/latoregular.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('../fonts/latobold.woff2') format('woff2'),
+        url('../fonts/latobold.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('../fonts/latoblack.woff2') format('woff2'),
+        url('../fonts/latoblack.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:500italic&displa=swap);
+
+
+body {
+   padding: 0 15px;
+   font-size: 14px;
+}
+.hidden {
+    display: none;
+}
+/* Header */
+.header {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+.main-title {
+    font-family: "Lato", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+.header p {
+    margin-bottom: 20px;
+}
+.header a {
+    color: red;
+}
+.header p + img {
+    margin-bottom: 20px;
+}
+
+/* Main */
+.main {
+}
+p {
+    margin-bottom: 20px;
+}
+p::first-letter {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: blueviolet;
+}
+.prologue {
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+ul, ol {
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+#random {
+    font-family: 'Larsseit', sans-serif;
+    font-weight: 500;
+    color: rgb(83, 83, 83);
+    background-color: aqua;
+}
+
+.chapter-first > ol li {
+    list-style-type: upper-roman;
+    color: green;
+    font-family: "Lato", sans-serif;
+}
+
+.scary-secret li {
+    list-style-type: decimal; 
+}
+.scary-secret ul li {
+    list-style-type: circle;
+}
+.scary-secret ul {
+    margin-top: 20px;
+}
+.scary-secret span {
+    font-family: 'Larsseit', sans-serif;
+    font-weight: 700;
+    color: rgb(31, 160, 160);
+}
