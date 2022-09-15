@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    color: inherit;
+}
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea {
+    font-weight: inherit;
+    font-size: inherit;
+}
+button {
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+}
+body {
+    line-height: 1;
+}
+/* ============================================ */
+
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../fonts/CormorantInfant-Regular.woff2') format('woff2'), url('../fonts/CormorantInfant-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../fonts/CormorantInfant-Italic.woff2') format('woff2'), url('../fonts/CormorantInfant-Italic.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../fonts/CormorantInfant-Medium.woff2') format('woff2'), url('../fonts/CormorantInfant-Medium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../fonts/CormorantInfant-MediumItalic.woff2') format('woff2'), url('../fonts/CormorantInfant-MediumItalic.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../fonts/CormorantInfant-Bold.woff2') format('woff2'), url('../fonts/CormorantInfant-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CormorantInfant';
+    src: url('../fonts/CormorantInfant-BoldItalic.woff2') format('woff2'), url('../fonts/CormorantInfant-BoldItalic.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    width: 600px;
+    margin: 0 auto;
+}
+h1 {
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgba(114, 65, 115, 0.5);
+}
+h1 span {
+    text-transform: lowercase;
+}
+h1 + p {
+    text-align: justify;
+    text-indent: 20px;
+    margin-bottom: 30px;
+    color: grey;
+    text-shadow: 2px 1px 1px black;
+}
+
+p span {
+    font-family: 'CormorantInfant', serif;
+}
+
+p span:nth-child(1){
+    color: black;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+p span:nth-child(2) {
+    font-style: italic;
+    color: black;
+    text-decoration: line-through
+}
+p span:nth-child(3){
+    font-weight: 500;
+    color: rgb(238, 96, 14);
+    text-decoration: overline;
+}
+p span:nth-child(4) {
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(238, 96, 14);
+}
+p span:nth-child(5){
+    font-weight: 700;
+    color: rgb(21, 14, 238);
+}
+p span:nth-child(6) {
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(21, 14, 238);
+}
+
+p.second {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 11px;
+    line-height: 200%;
+    font-family: 'CormorantInfant';
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+p.second + p {
+    text-align: right;
+    text-transform: uppercase;
+    word-spacing: 30px;
+}
+
+.inner, #container {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+.inner {
+    background-color: brown;
+    padding: 15px;
+    border: 2px dashed black;
+    
+}
+.inner p{
+    border: 1px solid black;
+    width: 168px;
+    height: 68px;
+    padding-top: 20px;
+}
+
+#container {
+    border: 2px dashed black;
+
+}
+.outside {
+    background-color: green;
+    margin: 15px;
+    width: 170px;
+    height: 70px;
+}
+.outside p {
+    padding-top: 20px;
+}
