@@ -1,0 +1,218 @@
+*,*::before,*::after{margin:0;padding:0;border:0;box-sizing:border-box;}
+li{list-style:none;}
+a{color: inherit;}
+a:link,a:visited,a:hover{text-decoration:none;}
+img {vertical-align:top;}
+h1,h2,h3,h4,h5,h6,input,button,textarea{font-weight: inherit;font-size:inherit;}
+button{cursor:pointer;color:inherit;background-color:inherit;}
+body{line-height:1;}
+/* --------------------------------------------------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap);
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+    padding-top: 50px;
+}
+
+[class*="__container"]{max-width: 810px; margin:0 auto;}
+
+.inline-block {
+    display: inline-block;
+}
+
+.header {
+}
+.header__container {
+    margin-bottom: 40px;
+}
+.header__topics {
+    margin-bottom: 12px;
+}
+.header__topic {
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+.header__topic:not(:last-child) {
+    margin-right: 5px;
+}
+.header__topic:nth-child(1) {
+    background: url('../img/header/article.svg') 0 50% no-repeat;
+    padding-left: 24px; 
+}
+.header__topic:nth-child(3) {
+    font-weight: 700;
+    color: #FF3F3A;
+}
+.header__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    word-spacing: 10px;
+    margin-bottom: 26px;
+}
+.header__info {
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+}
+.header__date {
+    padding-left: 24px;
+    background: url('../img/header/calendar.svg') 0 50% no-repeat;
+    margin-right: 24px;
+}
+.header__time {
+    padding-left: 24px;
+    background: url('../img/header/Clock.svg') 0 50% no-repeat;
+}
+.share {
+    float: right;
+}
+.header__share {
+}
+.share p, .footer__tags p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E212C;
+    margin-right: 12px;
+}
+.share__links {
+}
+.share__link {
+}
+.share__link:not(:last-child) {
+    margin-right: 12px;
+}
+
+
+.main {
+}
+.main__container {
+    margin-bottom: 60px;
+}
+.main__image {
+    margin-bottom: 60px;
+}
+.main__image img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.main__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+.main__text, .main__list {
+    font-size: 16px;
+    line-height: 160%;
+    color: #424551;
+}
+.main__text:not(:last-child), .main__list {
+    margin-bottom: 24px;
+}
+.main__quote {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #1E212C;
+    padding-left: 58px;
+    background: url('../img/main/braces.svg') 0 0 no-repeat;
+    margin: 48px 0;
+}
+.main__list {
+}
+.main__item {
+    padding-left: 32px;
+    background: url('../img/main/check.svg') 0 50% no-repeat;
+}
+
+
+.footer {
+    margin-bottom: 60px;
+}
+.footer__container {
+}
+.footer__tags {
+}
+.inline-block {
+}
+.tags {
+}
+.tag {
+
+}
+.tag:not(:last-child) {
+    margin-right: 12px;
+}
+.tag a {
+    padding: 6px 16px;
+    border: 2px solid #D7DADD;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787A80;
+}
+.footer__share {
+}
+.share {
+}
+.share__links {
+}
+.share__link {
+}
+
+hr {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 60px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    width: 70%;
+    margin: 0 auto;
+    height: 5000px;
+}
+.card {
+    flex: 1 1 33.33333%;
+    min-height: 100px;
+    max-height: 300px;
+    border: 1px solid black;
+    text-align: center;
+}
+.card:nth-child(1) {
+    background-color: green;
+}
+.card:nth-child(2) {
+    background-color: rgba(243, 150, 45, 0.5);
+}
+.card:nth-child(3) {
+    background-image: url('../img/homework/bg.png');
+    background-size: contain;
+}
+.card:nth-child(4) {
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.card:nth-child(5) {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.card:nth-child(6) {
+    background: url('../img/homework/detailed-parrot-polyprismatic.svg') no-repeat 0 0  / 30%, url('../img/homework/detailed-parrot-polyprismatic.svg') no-repeat 50% 50% / 30%, rgb(46, 170, 92);
+}
+.card:nth-child(7) {
+    background: url('../img/homework/wallpaperflare.com_wallpaper.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: contain;
+}
