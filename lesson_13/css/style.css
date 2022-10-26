@@ -1,0 +1,103 @@
+*,*::before,*::after{margin:0;padding:0;border:0;box-sizing:border-box;}
+li{list-style:none;}
+a{color:inherit;text-decoration:none;}
+img {vertical-align:top;}
+h1,h2,h3,h4,h5,h6,input,button,textarea{font-weight: inherit;font-size:inherit;}
+button{cursor:pointer;color:inherit;background-color:inherit;}
+html,body{height:100%;line-height:1;}
+
+[class*='__container']{max-width: 1230px; margin: 0 auto;}
+
+.main {
+}
+.main__container {
+    padding-top: 250px;
+}
+.folder {
+    margin: 0 auto;
+    height: 170px;
+    width: 200px;
+    position: relative;
+}
+.folder__face, .folder__back{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+}
+.folder__face {
+    border-radius: 0 10px 10px 10px;
+    background-color: rgb(203, 203, 33);
+    transition: all 1s linear 0s;
+    box-shadow: 6px -3px 15px -7px rgba(0,0,0,0.75);
+    z-index: 2;
+    top: 8px;
+}
+.folder__back {
+    border-radius: 10px 0 10px 10px;
+    background-color: rgb(165, 165, 18);
+    transition: 1s;
+}
+.folder__face::before, .folder__back::before{
+    content: '';
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top:-19px;
+    
+}
+.folder__face::before {
+    left: 0;
+    background-color: rgb(203, 203, 33);
+}
+.folder__back::before {
+    right: 0;
+    background-color: rgb(165, 165, 18);
+}
+.folder:hover .folder__face {
+    transform: rotateX(140deg) skewX(10deg);
+    perspective: 1000px;
+    top: 0;
+    transform-origin: bottom;
+    margin-left: -5px;
+    z-index: 0;
+}
+.folder:hover .folder__back {
+    transform: skewX(-5deg);
+    transform-origin: bottom;
+}
+.paper {
+    width: 90%;
+    height: 90%;
+    border: 1px solid rgb(175, 175, 175);
+    position: absolute;
+    top: 3px;
+    left: 8px;
+    cursor: pointer;
+    display: inline-block;
+    background: url('../img/top_secret.png') center / contain no-repeat, #fff;
+}
+@keyframes show {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(95deg);
+    }
+    50% {
+        transform: rotate(95deg) skewX(-5deg);
+    }
+    75% {
+        transform: rotate(95deg) skewX(-5deg) scale(3);
+    }
+    100% {
+        transform: rotate(0deg) skewX(5deg) scale(3);
+    }
+}
+.paper:hover{
+    animation-name: show;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
