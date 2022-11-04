@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 16</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <section class="main__drop drop-main">
+                <div class="drop-main__container">
+                    <div class="drop-main__image">
+                        <img src="img/illustration.svg" alt="illustration">
+                    </div>
+                    <div class="drop-main__content">
+                        <div class="drop-main__title title">
+                            <p>Any questions?</p>
+                            <h2>Drop us a line</h2>
+                        </div>
+                        <form action="https://jsonplaceholder.typicode.com/posts" class="drop-main__form form" method="post">
+                            <div class="form__line">
+                                <div class="form__field">
+                                    <label for="first-name">First Name*</label>
+                                    <input type="text" placeholder="Your first name" name="first-name" id="first-name" required autocomplete="off">
+                                </div>
+                                <div class="form__field">
+                                    <label for="last-name">Last  Name*</label>
+                                    <input type="text" placeholder="Your last name" name="last-name" id="last-name" required autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="form__line">
+                                <div class="form__field">
+                                    <label for="email">Email*</label>
+                                    <input type="text" placeholder="Your working email" name="email" id="email" required autocomplete="off" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address.">
+                                </div>
+                                <div class="form__field">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" placeholder="Your phone number" name="phone" id="phone" required autocomplete="off" pattern="[0-9]{11}" title="Enter a correct phone number using 0-9 characters" maxlength="11">
+                                </div>
+                            </div>
+                            <div class="form__line">
+                                <div class="form__field form__field--message">
+                                    <label for="message">Message* lorem</label>
+                                    <textarea name="message" id="message" placeholder="Your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="form__footer">
+                                <div class="footer__check">
+                                    <input class="footer__checkbox" type="checkbox" name="agree" id="agree" required>
+                                    <label class="footer__label" for="agree">I agree to receive communications from Createx Online School lorem</label>
+                                </div>
+                                <div class="footer__button">
+                                    <button class="btn btn--orange" type="submit">Send message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="main__practice practice-main">
+                <div class="practice-main__container">
+                    <div class="select">
+                        <label for="select">Theme</label>
+                        <select name="select" id="select">
+                            <option value="light">Light</option>
+                            <option value="Dark">Dark</option>
+                        </select>
+                    </div>
+                    <div class="radio">
+                        <h2>Select color</h2>
+                        <div class="radio__item item-radio">
+                            <input  class="item-radio__input" type="radio" name="color" id="red" value="red">
+                            <label  class="item-radio__label item-radio__label--red" for="red">Red</label>
+                        </div>
+                        <div class="radio__item item-radio">
+                            <input  class="item-radio__input" type="radio" name="color" id="green" value="green">
+                            <label  class="item-radio__label item-radio__label--green" for="green">Green</label>
+                        </div>
+                        <div class="radio__item item-radio">
+                            <input  class="item-radio__input" type="radio" name="color" id="blue" value="blue">
+                            <label  class="item-radio__label item-radio__label--blue" for="blue">Blue</label>
+                        </div>
+                        <div class="radio__item item-radio">
+                            <input  class="item-radio__input" type="radio" name="color" id="white" value="white">
+                            <label  class="item-radio__label item-radio__label--white" for="white">White</label>
+                        </div>
+                        <div class="radio__item item-radio">
+                            <input class="item-radio__input" type="radio" name="color" id="black" value="black">
+                            <label class="item-radio__label item-radio__label--black" for="black">Black</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
