@@ -1,0 +1,108 @@
+*,*::before,*::after{margin:0;padding:0;border:0;box-sizing:border-box;}
+li{list-style:none;}
+a{color:inherit;text-decoration:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6,input,button,textarea{font-weight:inherit;font-size:inherit;font-family:inherit;}
+button{cursor:pointer;color:inherit;background-color:inherit;}
+input{width:100%;}
+html,body{height:100%;line-height:1;}
+
+[class*='__container'] {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.main {
+    padding: 3.75rem 0;
+    font-family: sans-serif;
+}
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+a {
+    color: blue;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.lesson:not(:last-child) {
+    margin-bottom: 50px;
+}
+.lesson div {
+    padding: 1.875rem;
+    border-radius: 10px;
+}
+.lesson div:nth-of-type(odd) {
+    background: greenyellow;
+}
+.lesson div:nth-of-type(even) {
+    background: teal;
+}
+.lesson div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+.lesson p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+.lesson li {
+    padding-left: 1.25rem;
+    line-height: 1.5;
+}
+.lesson li:not(:last-child) {
+    margin-bottom: 1em;
+}
+.lesson li span {
+    font-weight: 700;
+}
+
+
+.search-btn {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 10px;
+
+}
+.search {
+    /* width: 100vw;
+    height: 100vh; */
+    /* background-color: rgba(109, 109, 225, 0.479); */
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    display: none;
+}
+.seacrh__form {
+}
+.form {
+    width: 90%;
+}
+.form>div.form__line {
+    display: flex;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.form__input {
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+    flex: 0 0 50%;
+}
+.form__submit {
+    padding: 15px;
+    background-color: rgb(96, 96, 227);
+    border-radius: 0 10px 10px 0;
+}
+.form__counter {
+    display: inline-block;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.search.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

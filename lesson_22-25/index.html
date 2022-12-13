@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Java Script</title>
+</head>
+<body>
+    <main class="main">
+        <div class="main__container">
+            <section class="lesson lesson--22">
+                <h2>Урок № 22</h2>
+                <div>
+                    <p>Ошибку вызовут <a href="https://youtu.be/uOeFpp872MY?t=550" target="_blank">варианты</a>:</p>
+                    <ul>
+                        <li><span>№ 3,</span> т.к. в случае написания инструкций в 1 строку, необходимо после каждой ставить <span>";"</span></li>
+                        <li><span>№ 4,</span> т.к. в первой строке у значения <span>"Учим"</span> отсутсвуют закрывающие кавычки</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ошибочные <a href="https://youtu.be/5V8IeATHr4w?t=779" target="_blank">варианты</a>:</p>
+                    <ul>
+                        <li><span>№ 1,</span> т.к. отсутствует знак после объявления переменной <span>";"</span>, либо <span>","</span> при использование одного ключевого слова <span>"let"</span></li>
+                        <li><span>№ 2,</span> не вызовет ошибку, но такое название переменной не соответствует принципу <span>camelCase</span></li>
+                        <li><span>№ 3,</span> в верхнем регистре принято присваивать имя константе, когда ее значение уже известно</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ошибочные <a href="https://youtu.be/g7jDucodUzQ?t=685" target="_blank">варианты</a>:</p>
+                    <ul>
+                        <li><span>№ 1,</span> т.к. такая конструкция будет работать только внутри обратных кавычек</li>
+                        <li><span>№ 2,</span> вернется значение <span>infinity</span>, а не <span>NaN</span></li>
+                        <li><span>№ 3,</span> вернется <span>undefined</span>, а не <span>Null</span></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lesson lesson--23">
+                <h2>Урок № 23</h2>
+                <div>
+                    <p>Не верны <a href="https://youtu.be/oSO_StIWaXM?t=1613" target="_blank">варианты</a>:</p>
+                    <ul>
+                        <li><span>№ 1,</span> т.к. оператор <span>"+"</span> не переводит операнды в тип <span>number</span></li>
+                        <li><span>№ 3,</span> т.к. инкремент применяется только к переменной</li>
+                        <li><span>№ 4,</span> т.к. инкремент стоит после переменной</li>
+                        <li><span>№ 5,</span> т.к. первая операнда не <span>false</span>, она вернет последнее значение, которое <span>true (11)</span></li>
+                        <li><span>№ 6,</span> вернет <span>0</span> т.к. 0 не = null</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Не верны <a href="https://youtu.be/tFyRhDZgHaU?t=525" target="_blank">варианты</a>:</p>
+                    <ul>
+                        <li><span>№ 1,</span> вернет <span>"Ложь"</span> т.к. применен оператор строгого равенства</li>
+                        <li><span>№ 2,</span> вернет <span>"Истина"</span> т.к. применен оператор не строгого равенства</li>
+                        <li><span>№ 3,</span> вернет <span>"Истина"</span> т.к. все условия <span>true</span></li>
+                        <li><span>№ 4,</span> вернет <span>"Истина"</span> т.к. все условия 0 = false, а "пробел" = true</li>                        
+                    </ul>
+                </div>
+                <div>
+                    <p>Ответы на <a href="https://youtu.be/QjDzp-yM_To?t=644">задачи</a>:</p>
+                    <ul>
+                        <li><span>Задача 2.</span> Ответ - неверно. Т.к. на последней итерации 1-- в переменную вернется 0, что эквивалентно false, а это остановит цикл</li>                        
+                    </ul>
+                </div>
+                <div>
+                    <p>Ответы на <a href="https://youtu.be/jc5Upe8xIN0?t=884">задачи</a>:</p>
+                    <ul>
+                        <li><span>Задача 1.</span> Ответ - верно.</li>
+                        <li><span>Задача 3.</span> Ответ - неверно, т.к. оператор "+" не переводит string в number, получим "123456" типа string</li>
+                        <li><span>Задача 6.</span> Ответ - неверно, т.к. мы ищем фрагмент 'лан' c индекса 4, а он начинается с индекса 3</li>                        
+                    </ul>
+                </div>
+            </section>
+            <section class="lesson lesson--24">
+                <h2>Урок № 24</h2>
+                <div>
+                    <p>Ответы на <a href="https://youtu.be/6cKoB5ijaGA?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&t=1055" target="_blank">задачи</a>:</p>
+                    <ul>
+                        <li><span>№ 1,</span> Коля попадет в консоль первым. т.к. ему не задан интервал</li>
+                        <li><span>№ 2,</span> функция вызвана верно, т.к. мы можем вызывать функцию как до ее объявления, так и после</li>
+                        <li><span>№ 3,</span> функция вызвана неверно, т.к. построено функциональное выражение и вызвать ее можно только после записи в переменную</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ответы на <a href="https://youtu.be/GULFKAX0nxY?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&t=2348" target="_blank">задачи</a>:</p>
+                    <ul>
+                        <li><span>№ 1,</span> длинна будет равна <span>4</span></li>
+                        <li><span>№ 5,</span> <span>previousValue = 9</span>, т.к. оно не задано, берется первое значение из массива</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="lesson lesson--25">
+                <h2>Урок № 25</h2>
+                <div>
+                    <p>Ответы на <a href="https://youtu.be/DuWyc76lYC4?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&t=4131" target="_blank">задачи</a> (DOM):</p>
+                    <ul>
+                        <li><span>Задача 1</span> <div data-say-hi="yes">Привет!</div></li>
+                        <li><span>Задача 2</span>
+                            <ul class="dom-list">
+                                <li>Корчи</li>
+                                <li>Йойчи</li>
+                            </ul>
+                        </li>
+                        <li><span>Задача 3</span>
+                            <div class="like"></div>
+                            <div class="subscribe"></div>
+                            <div class="like subscribe"></div>
+                        </li>
+                        <li><span>Задача 4</span> элемент добавится в конец <span>ul</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ответы на <a href="https://youtu.be/TEeKr2ON66A?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&t=1996" target="_blank">задачи</a> по метрике:</p>
+                    <ul>
+                        <li><span>Задача 1</span> Ширина скролла равна: <span class="answer"></span></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Ответ на <a href="https://youtu.be/bWCzbR5DvCo?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV&t=3455">задачу</a></p>
+                    <button class="search-btn" type="button"><img src="img/search.svg" alt="search"></button>
+                    <div class="search">
+                        <form action="#" method="get" class="seacrh__form form">
+                            <div class="form__line">
+                                <input type="text" class="form__input" placeholder="Search" name="search" id="search" autocomplete="off">
+                                <button type="submit" class="form__submit"><img src="img/search.svg" alt="Search"></button>
+                            </div>
+                            <span class="form__counter">0</span>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
